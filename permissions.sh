@@ -8,7 +8,15 @@ do
         echo "$file is executable"
     else
         echo "$file is not executable"
-        chmod +x $file
-        echo "Permissions changed"
+        if [[ $file == *.sh ]]
+        then
+            echo "Adding permissions to $file"
+            chmod +x $file
+            echo "Permissions changed"
+        else
+            echo "Skipping $file"
+            continue
+        fi
+        echo "Done executing"
     fi
 done

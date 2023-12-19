@@ -4,7 +4,7 @@ Hopefully I will add powershell too if I have the time.
 
 Feel free to use my codes,generally there are 2 branches to this repo:
     main : Useful bash scripts. 
-    games : Games that I made in bash and also their individual files. *Where you are now
+    games : Games that I made in bash and also their individual files.
 
 I will also try using github co-pilot/AWS code whisperer for serious scripts but I will attach any AI help in the commit message.
 

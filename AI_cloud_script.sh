@@ -16,5 +16,9 @@ curl https://ollama.ai/install.sh | sh
 #Run the models
 ollama run --model=gpt-3.5-turbo --prompt="What is the capital of France?" #Example 1
 
-ollama run llama2 #Example 2 
+# ollama run llama2 - Example 2 
+ollama run llama2 --prompt="What is the capital of Nairobi?" #Example 2
+
+#To choose the output
+ollama run llama2 --prompt="What is the recipie for chicken?" --output=text #Example 3
 

@@ -4,3 +4,7 @@
 
 #!/bin/bash
 if [ -f $1 ]; then
+rm $1
+else
+echo "File $1 does not exist"
+fi

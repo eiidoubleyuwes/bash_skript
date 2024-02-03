@@ -4,7 +4,7 @@ Remember for all the scripts to work you have to add executeable permissions to 
 
 run:
 
-chmod u+x <Script.sh>
+   `chmod u+x <Script.sh>`
 
 Hopefully I will add powershell too if I have the time.
 
@@ -14,5 +14,10 @@ I will also try using github co-pilot/AWS code whisperer for serious scripts but
 
 There is a .gitignore file but I included it in the .gitignore file itself so it isnt pushed.
 
+To make any script available to anywhere in the terminal run :
+  `nano ~/.bashrc`
+
+  then:
+ `export PATH=$PATH:/path/to/your/script`
 
 

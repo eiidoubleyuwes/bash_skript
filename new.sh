@@ -1,7 +1,9 @@
 #This script should create a new user and assign permissions to him
 #!/bin/bash
 echo "Creating a new user"
-sudo adduser newuser
+sleep 2
+echo "Enter the username"
+
 sudo usermod -aG sudo newuser
 echo "Done, new user created"
 # Path: update.sh

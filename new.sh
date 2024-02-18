@@ -12,5 +12,14 @@ echo "Done, new user created"
 echo "Changing the password for the new user"
 sudo passwd $newuser
 echo "Done, password changed"
+#Add the user to a group
+echo "Adding the user to a group"
+sleep 2
+echo "Enter the group name"
+#List all the groups
+cut -d: -f1 /etc/group
+read groupname
+sudo usermod -aG $groupname $newuser
+
 # Path: update.sh
 # This simple script is supposed to update the system and clean unused packages

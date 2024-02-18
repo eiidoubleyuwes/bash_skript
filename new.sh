@@ -4,7 +4,7 @@ echo "Creating a new user"
 sleep 2
 echo "Enter the username"
 read newuser
-sudo adduser newuser
+sudo adduser $newuser
 sudo usermod -aG sudo newuser
 echo "Done, new user created"
 # Path: update.sh
